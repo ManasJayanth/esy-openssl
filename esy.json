@@ -6,7 +6,7 @@
   "override": {
     "build": [
       [
-        "./configure",
+        "./Configure",
         "--prefix=#{self.install}",
         "--openssldir=#{self.etc / 'openssl-1.1'}",
         "#{os == 'windows' ? 'mingw64 --cross-compile-prefix=x86_64-w64-mingw32-': 'cc' }",
