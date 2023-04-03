@@ -11,7 +11,7 @@ jobs:
         os:
           - macos-latest
           - ubuntu-latest
- #         - windows-latest
+          - windows-latest
 
     runs-on: ${{ matrix.os }}
 
@@ -24,11 +24,11 @@ jobs:
         with:
           node-version: 14.x
 
-      - name: Install esy
-        run: npm install -g @esy-nightly/esy verdaccio
+      - name: Install esy, verdaccio and esy-package
+        run: npm install -g @esy-nightly/esy verdaccio esy-package@dev
 
       - name: Run end-to-end tests on the package 
-        run: bash ./.ci/steps.sh
+        run: DEBUG=bale*,verdaccio* esy-package
         shell: bash
 
       - uses: actions/upload-artifact@v2
