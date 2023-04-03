@@ -1,0 +1,12 @@
+{
+  "esy": {
+    "build": "echo #{esy-openssl.lib}"
+  },
+  "dependencies": {
+    "yarn-pkg-config": "*",
+    "esy-openssl": "1.1.1t"
+  },
+  "resolutions": {
+    "yarn-pkg-config": "esy-ocaml/yarn-pkg-config#9293b15f9f0e3dcac6f86ebb1e09a2fa766289ba"
+  }
+}
