@@ -2,7 +2,7 @@
 
 # esy-openssl
 
-`esy-openssl` is sample package, [`hello`](https://github.com/esy/test-hello-c), packaged for [`esy`](https://esy.sh/).
+`esy-openssl` is sample package, [`openssl`](https://www.openssl.org), packaged for [`esy`](https://esy.sh/).
 
 ## Why
 `esy` can not only fetch and install Reason and OCaml libraries and tools,
