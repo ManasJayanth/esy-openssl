@@ -9,7 +9,8 @@
         "./Configure",
         "--prefix=#{self.install}",
         "--openssldir=#{self.etc / 'openssl-1.1'}",
-        "#{os == 'windows' ? 'mingw64 --cross-compile-prefix=x86_64-w64-mingw32-': 'cc' }",
+        "#{os == 'windows' ? 'mingw64': 'cc'}",
+        "#{os == 'windows' ? '--cross-compile-prefix=x86_64-w64-mingw32-': '--cross-compile-prefix=' }",
         "no-ssl3",
         "no-ssl3-method",
         "no-zlib"
