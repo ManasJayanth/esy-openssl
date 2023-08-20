@@ -1,9 +1,8 @@
 {
   "esy": {
-    "build": "echo #{esy-openssl.lib}"
+    "build": "ls #{esy-openssl.lib}"
   },
   "dependencies": {
-    "yarn-pkg-config": "*",
     "esy-openssl": "1.1.1000-t"
   },
   "resolutions": {
